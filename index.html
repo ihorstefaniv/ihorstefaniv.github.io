@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="src/tabs.css">
+</head>
+
+<body>
+	<header class="header">
+		<hi class="header-text">SLIDER, ACCORDEON, TABS PAGE</hi>
+	</header>
+	<section class="tabs-section">
+		<div id="horizontal-tabs">
+			<ul class="tabs">
+				<div class="selector"></div>
+				<li class="tab active-item">Акордеон</li>
+				<li class="tab">Слайдер</li>
+				<li class="tab">ToDoList</li>
+			</ul>
+			<div class="tab-content">
+				<div id="item1" class="tab-item-content  active">
+					<div class="accordion" id="accordion-1" style="max-width: 30rem; margin: 1rem auto 2rem;">
+						<div class="accordion__item accordion__item_show">
+							<div class="accordion__header">
+								Text 1
+							</div>
+							<div class="accordion__body">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut consequuntur
+								iure magni
+								tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta amet.
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__header">
+								Text 2
+							</div>
+							<div class="accordion__body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Non earum deleniti recusandae placeat rem eius
+								quod
+								aliquid adipisci nemo alias debitis corporis pariatur quibusdam est, porro fuga id iure vero?
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__header">
+								Text 3
+							</div>
+							<div class="accordion__body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid repellat dicta vel sapiente laudantium
+								minima
+								porro voluptatem nam, alias aliquam qui quasi eveniet odit fugiat eius aspernatur nesciunt veniam
+								expedita!
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion" id="accordion-2" style="max-width: 30rem; margin: 1rem auto;">
+						<div class="accordion__item accordion__item_show">
+							<div class="accordion__header">
+								Text 4
+							</div>
+							<div class="accordion__body">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut consequuntur
+								iure magni
+								tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta amet.
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__header">
+								Text 5
+							</div>
+							<div class="accordion__body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Non earum deleniti recusandae placeat rem eius
+								quod
+								aliquid adipisci nemo alias debitis corporis pariatur quibusdam est, porro fuga id iure vero?
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__header">
+								Text 6
+							</div>
+							<div class="accordion__body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid repellat dicta vel sapiente laudantium
+								minima
+								porro voluptatem nam, alias aliquam qui quasi eveniet odit fugiat eius aspernatur nesciunt veniam
+								expedita!
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div id="item2" class="tab-item-content">
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 3</div>
+							<img src="/src/img/11.jpg" style="width:100%">
+							<div class="text">VW Golf</div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 3</div>
+							<img src="/src/img/22.jpg" style="width:100%">
+							<div class="text">Scoda Scala</div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 3</div>
+							<img src="/src/img/44.jpg" style="width:100%">
+							<div class="text">Renault Megane</div>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
+				<div id="item3" class="tab-item-content">
+<div class="link-todo"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="src/tabs.js"></script>
+</body>
+
+</html>
